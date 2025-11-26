@@ -16,7 +16,7 @@ namespace HCI.AIAssistant.API.Controllers;
         {
             AIAssistantControllerPostMessageResponseDTO response = new()
             {
-                TextMessage = "Hello!"
+                TextMessage = "Hello!" + request.TextMessage
             };
             return Ok(response);
         }
